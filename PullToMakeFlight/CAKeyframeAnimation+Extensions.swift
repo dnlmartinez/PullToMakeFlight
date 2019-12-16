@@ -27,10 +27,10 @@ enum TimingFunction {
 
 func mediaTimingFunction(_ function: TimingFunction) -> CAMediaTimingFunction {
     switch function {
-    case .linear: return CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-    case .easeIn: return CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-    case .easeOut: return CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-    case .easeInEaseOut: return CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+    case .linear: return CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+    case .easeIn: return CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
+    case .easeOut: return CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+    case .easeInEaseOut: return CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
     }
 }
 
