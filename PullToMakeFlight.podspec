@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.framework   = 'CoreGraphics'
 
-  s.dependency 'PullToRefresher', '~> 3.0.1'
+  s.dependency 'PullToRefresher', :git => 'https://github.com/dnlmartinez/PullToRefresh.git'
 
 end
